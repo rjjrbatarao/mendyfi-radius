@@ -124,7 +124,7 @@ class Generated extends Component
             'batch_code',
             'reseller_name'
         )
-        ->orderBy('hotspot_vouchers.id','DESC')
+        ->orderBy('hotspot_vouchers.generation_date','DESC')
         ->paginate(10,['*'],'batch');
     }
 
